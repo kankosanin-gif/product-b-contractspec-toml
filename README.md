@@ -24,3 +24,7 @@ A TOML-first contract definition standard for agent task execution.
 
 ## Symphony runbook
 - Work-item / Proof-of-Work flow: `orchestration/SYMPHONY_RUNBOOK.md`
+
+## KPI tracking
+- KPI snapshot: `metrics/KPI_SNAPSHOT.md`
+- Blocker aging metric: `metrics/BLOCKER_AGING.md`
