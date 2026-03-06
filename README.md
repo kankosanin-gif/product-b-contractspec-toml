@@ -21,3 +21,6 @@ A TOML-first contract definition standard for agent task execution.
 ## Operational records
 - Work-item log: `records/work-item-log.md`
 - Weekly review: `reviews/WEEKLY_REVIEW.md`
+
+## Symphony runbook
+- Work-item / Proof-of-Work flow: `orchestration/SYMPHONY_RUNBOOK.md`
