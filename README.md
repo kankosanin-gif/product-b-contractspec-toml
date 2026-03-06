@@ -15,3 +15,6 @@ A TOML-first contract definition standard for agent task execution.
 1. Attach a contract file to every implementation issue
 2. Validate required sections before execution
 3. Require evidence links before gate transitions
+
+## Governance templates
+- Gate Decision Log: \n- Escalation SLA: \n- Proof-of-Work template: \n
