@@ -1,0 +1,64 @@
+# ContractSpec v0.1 (TOML)
+# Human-readable, diff-friendly contract definition for agent execution.
+
+[contract]
+id = "C-DEV-001"
+owner_manager = "Development Manager"
+assigned_agent = "Application Engineer"
+severity = "S2"
+
+[scope]
+in_scope = [
+  "Implement execution ledger CLI export",
+  "Add tests for CSV and markdown output"
+]
+out_of_scope = [
+  "UI redesign",
+  "Breaking DB schema changes"
+]
+
+[links]
+requirements = ["REQ-012", "REQ-018"]
+architecture = ["ARCH-004"]
+issue_url = "https://github.com/example/repo/issues/123"
+
+[[deliverables]]
+name = "CLI command: ledger export"
+path = "src/cli/export.ts"
+
+[[deliverables]]
+name = "Automated tests"
+path = "tests/export.test.ts"
+
+[verification]
+commands = [
+  "npm test -- tests/export.test.ts",
+  "npm run lint"
+]
+required_evidence = [
+  "CI link",
+  "test report",
+  "diff summary"
+]
+security_checks = [
+  "No secret leakage",
+  "Input validation for output path"
+]
+
+[completion]
+criteria = [
+  "All deliverables implemented",
+  "Verification commands passed",
+  "No unresolved S1/S2 risk"
+]
+
+[gates]
+requirement = true
+architecture = true
+quality = true
+security = true
+release = false
+
+[report]
+format = "Done/Risks/Decisions/Next/ETA"
+max_summary_lines = 12
